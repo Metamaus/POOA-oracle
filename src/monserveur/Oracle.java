@@ -20,6 +20,7 @@ public class Oracle {
         punisher = new Punisher();
     }
 
+    
     public static Oracle getInstance() {
         return instance;
     }
