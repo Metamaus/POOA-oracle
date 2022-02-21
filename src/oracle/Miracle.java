@@ -6,8 +6,6 @@ final class Miracle extends Service implements MiracleInterface{
     }
 
     public void Realise(){
-
-       
+        Oracle.getInstance().defaultPrint(" A miracle suddenly happens !");
     }
-
 }

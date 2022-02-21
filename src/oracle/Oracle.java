@@ -29,12 +29,12 @@ public class Oracle {
 
     void defaultPrint(String m) {
 
-        System.out.println("defaultPrint : " + m);
+        System.out.println("[Oracle] : " + m);
     }
 
     public void publicPrint(String m) {
 
-        System.out.println("publicPrint : " + m);
+        System.out.println("[Tribe] : " + m);
     }
 
     public AdviceInterface getAdviceInterface() {
