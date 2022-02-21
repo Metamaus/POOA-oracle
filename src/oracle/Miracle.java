@@ -1,4 +1,4 @@
-package monserveur;
+package oracle;
 
 final class Miracle extends Service implements MiracleInterface{
 

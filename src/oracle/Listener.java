@@ -1,8 +1,8 @@
-package monserveur;
+package oracle;
 
-final class Listen extends Service implements ListenInterface{
+final class Listener extends Service implements ListenInterface{
 
-    public Listen(){
+    public Listener(){
     }
 
     public void Listen(Oracle.needs myneeds){

@@ -1,21 +1,22 @@
-package monserveur;
+package oracle;
 
 public class Oracle {
 	
-	enum needs{
-		
+	public enum needs{
+		food,
+        rain
 	}
 
-    private static Oracle instance = new Oracle();
+    private static final Oracle instance = new Oracle();
     private Advice advice;
-    private Listen listen;
+    private Listener listen;
     private Miracle miracle;
     private Punisher punisher;
 
     private Oracle() {
 
         advice = new Advice();
-        listen = new Listen();
+        listen = new Listener();
         miracle = new Miracle();
         punisher = new Punisher();
     }
@@ -38,22 +39,22 @@ public class Oracle {
 
     public AdviceInterface getAdviceInterface() {
 
-        return (AdviceInterface)advice;
+        return advice;
     }
 
     public ListenInterface getListenInterface() {
 
-        return (ListenInterface)listen;
+        return listen;
     }
     
     public MiracleInterface getMiracleInterface() {
 
-        return (MiracleInterface)miracle;
+        return miracle;
     }
     
     public PunisherInterface getPunisherInterface() {
 
-        return (PunisherInterface)punisher;
+        return punisher;
     }
 
     Advice getAdvice() {
@@ -61,7 +62,7 @@ public class Oracle {
         return advice;
     }
     
-    Listen getListen() {
+    Listener getListen() {
 
         return listen;
     }
